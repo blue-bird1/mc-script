@@ -28,7 +28,7 @@ builder3.addItemInputs([
     <minecraft:sand> * 8,
     <contenttweaker:emc_coin_10000> * 1,
 ]);
-builder3.addItemOutput(<appliedenergistics2:material>* 1);
+builder3.addItemOutput(<appliedenergistics2:material>* 8);
 builder3.build();
 
 val builder4 as RecipePrimer = RecipeBuilder.newBuilder("coal_off", "void_portal", 1200);

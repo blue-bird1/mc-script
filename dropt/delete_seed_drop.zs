@@ -40,17 +40,4 @@ Dropt.list("seed_drops")
           // 创建一个 Drop 对象
           Dropt.drop().items([<minecraft:dye:3>])
       )
-  ).add(
-     
-      // 创建一个 Rule 对象
-      Dropt.rule()
-      .matchBlocks(["minecraft:wheat:*"])
-      .matchDrops([<minecraft:wheat_seeds>])
-      .replaceStrategy("REPLACE_ITEMS")
-      // replace to  null
-      .addDrop(
-
-          // 创建一个 Drop 对象
-          Dropt.drop()
-      )
   );
