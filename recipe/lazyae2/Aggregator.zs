@@ -1,0 +1,1 @@
+mods.threng.Aggregator.removeRecipe(<threng:material>);

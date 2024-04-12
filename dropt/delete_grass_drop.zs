@@ -1,0 +1,1 @@
+vanilla.seeds.removeSeed(<minecraft:wheat_seeds>);
