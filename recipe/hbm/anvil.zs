@@ -6,7 +6,7 @@ Anvil.removeRecipe([<hbm:motor>*2]);
 
 Anvil.addRecipe(<hbm:red_wire_coated>,[<hbm:wire_red_copper>*4, <hbm:plate_polymer>*4], 2);
 Anvil.addRecipe(<hbm:red_cable>,[<hbm:wire_red_copper>*2, <hbm:plate_polymer>*4],2);
-Anvil.addRecipe(<hbm:plate_polymer>,[<minecraft:glass>*4, <projecte:item.pe_covalence_dust:2>*1], 2);
+Anvil.addRecipe(<hbm:plate_polymer>*4,[<minecraft:glass>*4, <projecte:item.pe_covalence_dust:2>*1], 2);
 
 Anvil.addRecipe(<projecte:item.pe_ring_iron_band>,[<ore:ingotDuraSteel>*8], 3);
 Anvil.addRecipe(<hbm:stamp_stone_flat>,[<ore:stone>*3],1);
