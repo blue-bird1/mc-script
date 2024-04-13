@@ -7,3 +7,7 @@ recipes.addShaped(<projecte:item.pe_fuel:1>, [[<projecte:item.pe_fuel>, <project
 
 recipes.addShaped(<projecte:item.pe_water_orb>, [[<minecraft:water_bucket>, <minecraft:water_bucket>, <minecraft:water_bucket>],[<minecraft:water_bucket>, <projecte:item.pe_philosophers_stone>, <minecraft:water_bucket>], [<minecraft:water_bucket>, <minecraft:water_bucket>, <minecraft:water_bucket>]]);
 recipes.addShaped(<projecte:item.pe_evertide_amulet>, [[<hbm:ingot_starmetal>, <projecte:item.pe_fuel:2>, <hbm:ingot_starmetal>],[<projecte:item.pe_fuel:2>, <projecte:item.pe_water_orb>, <projecte:item.pe_fuel:2>], [<hbm:ingot_starmetal>, <projecte:item.pe_fuel:2>, <hbm:ingot_starmetal>]]);
+
+
+recipes.addShaped(<projecte:alchemical_chest>, [[<projecte:item.pe_covalence_dust>, <projecte:item.pe_covalence_dust:1>, <projecte:item.pe_covalence_dust:2>],[<minecraft:ender_pearl>, <minecraft:chest>, <minecraft:ender_pearl>], [<minecraft:ender_pearl>, <minecraft:ender_pearl>, <minecraft:ender_pearl>]]);
+recipes.addShaped(<projecte:item.pe_alchemical_bag>, [[<projecte:item.pe_covalence_dust:2>, <projecte:item.pe_covalence_dust:2>, <projecte:item.pe_covalence_dust:2>],[<minecraft:wool>, <projecte:alchemical_chest>, <minecraft:wool>], [<minecraft:ender_pearl>, <minecraft:wool>, <minecraft:ender_pearl>]]);
