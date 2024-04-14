@@ -18,25 +18,29 @@ events.onPlayerTick(function(event as PlayerTickEvent){
     }
 
     val data as IData = player.data;
-    var count  = 0;
+    var count   = 0 ;
     
-    if(data has 'twilight_tick'){
-        count = data.twilight_tick;
+   if(data has 'twilight_tick'){
+         logger.logInfo('hava data');
+         count = data.twilight_tick as int;
     }
 
-   // count += 1;
-  //  if(count >= 20){
-     //  count = 0;
-    //   for armor in player.armorInventory{
-      //     armor.damageItem(min(armor.maxDamage / 60, 1), player);
-      // }
-   // }
+    count += 1;
+    if(count >= 20){
+       logger.logInfo("1s");
+       count = 0;
+       for armor in player.armorInventory{
+           // ar
+            armor.mutable().damageItem(max(armor.maxDamage / 60, 1), player);
+           // armor.damageItem(min(armor.maxDamage / 60, 1), player);
+       }
+    }
+   //  logger.logInfo(count);
+    val newmap as IData = {
+      twilight_tick: count
+    };
 
-  //  val newmap as IData = {
-     // twilight_tick: count
-   // };
-
-//    data.update(newmap);
+    player.update(newmap);
     // logger.logInfo(toString(player.armorInventory));
 
 });

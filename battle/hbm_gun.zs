@@ -35,7 +35,7 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
                 }
             } else {
                 // 打印空指针异常的日志信息
-                if(isNull(entityHurtEvent.entityLivingBase)){
+                if(isNull(entityHurtEvent.entityLivingBase) || isNull(entityHurtEvent.entityLivingBase.definition)){
                     return;
                 }
                 if(entityHurtEvent.entityLivingBase.definition.id.startsWith("hbm:")){
