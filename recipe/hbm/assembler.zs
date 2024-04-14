@@ -20,3 +20,6 @@ Assembler.addRecipe(<hbm:machine_assembler>,[<hbm:motor>*2,<hbm:circuit_copper>*
 Assembler.replaceRecipe(<hbm:machine_refinery>,[<ore:plateSteel>*16,<ore:ingotSteel>*20,<hbm:plate_copper>*16,<hbm:hull_big_steel>*6,<hbm:pipes_steel>*2,<hbm:coil_tungsten>*8,
 <hbm:wire_red_copper>*8,<hbm:circuit_copper>*4,<hbm:plate_polymer>*8], 600);
 Assembler.replaceRecipe(<hbm:machine_large_turbine>, [<hbm:hull_big_steel>*1, <ore:plateSteel>*16, <hbm:rotor_steel>*2,<hbm:generator_steel>*4,<hbm:bolt_compound>*3,<hbm:pipes_steel>,<hbm:generator_steel>*4,<hbm:circuit_red_copper>*16],600);
+
+// <buildinggadgets:buildingtool>.withTag({blockstate: {Name: "minecraft:air"}})
+Assembler.addRecipe(<buildinggadgets:buildingtool>.withTag({blockstate: {Name: "minecraft:air"}}), [<ore:plateIron>*8, <hbm:circuit_aluminium>*4,<ore:paneGlass>,<minecraft:stone_button>*4,], 600);

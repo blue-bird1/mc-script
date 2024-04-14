@@ -28,9 +28,9 @@ events.onPlayerTick(function(event as PlayerTickEvent){
     if(count >= 20){
        count = 0;
        for armor in player.armorInventory{
-            if(!armor.definition.id.startsWith("twilightforest:")){
-              armor.mutable().damageItem(max(armor.maxDamage / 60, 1), player);
-           }
+            if(!isNull(armor) &&!armor.definition.id.startsWith("twilightforest:") ){
+                armor.mutable().damageItem(max(armor.maxDamage / 60, 1), player);
+            }
        }
     }
    //  logger.logInfo(count);
