@@ -1,2 +1,2 @@
-recipes.removeByMod("<buildinggadgets");
+recipes.removeByMod("buildinggadgets");
 
