@@ -35,7 +35,7 @@ val builder4 as RecipePrimer = RecipeBuilder.newBuilder("circuit_template_1", "v
 builder4.addItemInputs([
     <ore:blockIron> * 1,
     <ore:crystalCertusQuartz>* 16,
-    <contenttweaker:emc_coin_10000> * 64,
+    <contenttweaker:emc_coin_10000> * 16,
 ]);
 builder4.addItemOutput(<appliedenergistics2:material:13>* 1);
 builder4.build();
@@ -44,7 +44,7 @@ val builder5 as RecipePrimer = RecipeBuilder.newBuilder("circuit_template_2", "v
 builder5.addItemInputs([
     <ore:blockIron> * 1,
     <ore:gemDiamond> * 16,
-    <contenttweaker:emc_coin_10000> * 64,
+    <contenttweaker:emc_coin_10000> * 16,
 ]);
 builder5.addItemOutput(<appliedenergistics2:material:14>* 1);
 builder5.build();
@@ -53,7 +53,7 @@ val builder6 as RecipePrimer = RecipeBuilder.newBuilder("circuit_template_3", "v
 builder6.addItemInputs([
     <ore:blockIron> * 1,
     <ore:ingotGold>* 16,
-    <contenttweaker:emc_coin_10000> * 64,
+    <contenttweaker:emc_coin_10000> * 16,
 ]);
 builder6.addItemOutput(<appliedenergistics2:material:15>* 1);
 builder6.build();
