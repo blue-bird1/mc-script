@@ -1,6 +1,7 @@
 //This file was created via CT-GUI! Editing it is not advised!
 //Don't touch me!
 //#Remove
+
 recipes.remove(<appliedenergistics2:quartz_glass>);
 recipes.remove(<appliedenergistics2:part:220>);
 recipes.remove(<appliedenergistics2:controller>);

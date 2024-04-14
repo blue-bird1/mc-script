@@ -42,6 +42,12 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
                         entityHurtEvent.amount = entityHurtEvent.amount/2;
                         return;
                 }
+
+                if(entityHurtEvent.entityLivingBase.definition.id.startsWith("twilightforest:")){
+                         logger.logInfo("暮色伤害减少。");
+                        entityHurtEvent.amount = entityHurtEvent.amount*0.1;
+                        return;
+                }
                 // logger.logInfo(toString(entityHurtEvent.entityLivingBase.definition.id));
                 // logger.logInfo("伤害来源、直接来源或定义为空。");
             }
