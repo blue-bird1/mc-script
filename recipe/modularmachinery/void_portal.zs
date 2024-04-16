@@ -13,6 +13,15 @@ builder.addItemInputs([
 builder.addItemOutput(<hbm:machine_press> * 1);
 builder.build();
 
+RecipeBuilder.newBuilder("machine_press2", "void_portal", 1200)
+.addItemInputs([
+    <ore:blockIron> * 4,
+    <minecraft:furnace> * 1,
+    <minecraft:sticky_piston> * 1,
+    <hbm:cap_nuka> * 256,
+]).addItemOutput(<hbm:machine_press> * 1).build();
+
+
 val builder2 as RecipePrimer = RecipeBuilder.newBuilder("inscriber", "void_portal", 1200);
 builder2.addItemInputs([
     <ore:blockIron> * 2,

@@ -44,7 +44,6 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
                 }
 
                 if(entityHurtEvent.entityLivingBase.definition.id.startsWith("twilightforest:")){
-                         logger.logInfo("暮色伤害减少。");
                         entityHurtEvent.amount = entityHurtEvent.amount*0.1;
                         return;
                 }

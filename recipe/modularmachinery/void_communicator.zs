@@ -31,6 +31,13 @@ builder3.addItemInputs([
 builder3.addItemOutput(<hbm:template_folder> * 1);
 builder3.build();
 
+
+RecipeBuilder.newBuilder("template_folder2", "void_communicator", 600).addItemInputs([
+    <minecraft:book>*1,
+    <hbm:cap_nuka>* 256,
+    <ore:gemLapis>* 16,
+]).addItemOutput(<hbm:template_folder>* 1).build();
+
 val builder4 as RecipePrimer = RecipeBuilder.newBuilder("circuit_template_1", "void_communicator", 600);
 builder4.addItemInputs([
     <ore:blockIron> * 1,
@@ -67,7 +74,15 @@ RecipeBuilder.newBuilder("circuit_template_4", "void_communicator", 600).addItem
 val builder7 as RecipePrimer = RecipeBuilder.newBuilder("alchemy_book", "void_communicator", 600);
 builder7.addItemInputs([
     <projecte:item.pe_fuel> * 64,
-    <projecte:item.pe_covalence_dust:2> *64,
+    <projecte:item.pe_covalence_dust> *64,
+    <minecraft:book>*1,
 ]);
 builder7.addItemOutput(<contenttweaker:alchemy_book>* 1);
 builder7.build();
+
+
+RecipeBuilder.newBuilder("hbm:bobmazon_materials", "void_communicator", 600).addItemInputs([
+    <minecraft:book>*1,
+    <hbm:cap_nuka>* 64,
+    <ore:ingotSteel>
+]).addItemOutput(<hbm:bobmazon_materials>* 1).build();

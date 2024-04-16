@@ -20,6 +20,12 @@ recipes.remove(<hbm:furnace_iron>);
 recipes.remove(<hbm:powder_tcalloy>);
 recipes.remove(<hbm:inf_water>);
 
+recipes.removeByRegex("hbm:bobmazon_.+");
+
+
+recipes.addShapeless("powder_coal",<hbm:powder_coal>, [<ore:gemCoal>, <ore:gravel>]);
+recipes.addShaped(<hbm:bottle_empty>, [[null, <hbm:cap_nuka>, null],[<minecraft:glass_pane>, null, <minecraft:glass_pane>], [<minecraft:glass_pane>, <minecraft:glass_pane>, <minecraft:glass_pane>]]);
+
 
 // 移除电路板合成配方
 recipes.remove(<hbm:circuit_schrabidium>);
