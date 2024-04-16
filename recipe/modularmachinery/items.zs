@@ -1,2 +1,2 @@
-recipes.remove(<modularmachinery:itemmodularium>);
+// recipes.remove(<modularmachinery:itemmodularium>);
 
