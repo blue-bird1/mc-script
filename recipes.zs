@@ -1,6 +1,7 @@
 //This file was created via CT-GUI! Editing it is not advised!
 //Don't touch me!
 //#Remove
+
 recipes.remove(<hbm:bottle_nuka>);
 recipes.remove(<hbm:bottle_empty>);
 recipes.remove(<appliedenergistics2:quartz_glass>);

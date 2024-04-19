@@ -1,8 +1,19 @@
+#reloadable
 recipes.remove(<hbm:template_folder>);
 recipes.remove(<hbm:machine_press>);
 recipes.remove(<hbm:machine_assembler>);
 recipes.removeShapeless(<hbm:powder_steel>, [<hbm:powder_iron>, <hbm:powder_coal>]);
+
+
+// 移除电路板合成配方
+recipes.remove(<hbm:circuit_schrabidium>);
+recipes.remove(<hbm:circuit_gold>);
+recipes.remove(<hbm:circuit_red_copper>);
+recipes.remove(<hbm:circuit_copper>);
+recipes.remove(<hbm:circuit_aluminium>);
+
 recipes.remove(<hbm:circuit_raw>);
+recipes.remove(<hbm:rbmk_outgasser>);
 
 recipes.removeByRegex("hbm:cobalt.+");
 recipes.removeByRegex("hbm:stamp_.+_flat");
@@ -19,6 +30,7 @@ recipes.remove(<hbm:machine_coal_off>);
 recipes.remove(<hbm:furnace_iron>);
 recipes.remove(<hbm:powder_tcalloy>);
 recipes.remove(<hbm:inf_water>);
+recipes.remove(<hbm:oil_detector>);
 
 recipes.removeByRegex("hbm:bobmazon_.+");
 

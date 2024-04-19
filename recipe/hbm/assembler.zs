@@ -28,3 +28,5 @@ Assembler.addRecipe(<buildinggadgets:buildingtool>.withTag({blockstate: {Name: "
 Assembler.addRecipe(<hbm:red_cable>, [<hbm:plate_polymer>*2, <hbm:wire_red_copper>*2], 60);
 
 Assembler.addRecipe(<hbm:red_wire_coated>, [<hbm:plate_polymer>*4, <hbm:wire_red_copper>*4], 60);
+
+Assembler.addRecipe(<hbm:oil_detector>, [<hbm:circuit_copper>*2, <ore:ingotDuraSteel>*4, <hbm:wire_gold>*2], 600);
