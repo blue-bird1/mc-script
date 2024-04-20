@@ -88,3 +88,10 @@ RecipeBuilder.newBuilder("hbm:bobmazon_materials", "void_communicator", 600).add
     <hbm:cap_nuka>* 64,
     <ore:ingotSteel>
 ]).addItemOutput(<hbm:bobmazon_materials>* 1).build();
+
+
+RecipeBuilder.newBuilder("<touhou_little_maid:hakurei_gohei>", "void_communicator", 600).addItemInputs([
+    <contenttweaker:emc_coin_10000> * 32,
+    <minecraft:paper>*2,
+    <minecraft:stick>*2
+]).addItemOutput(<touhou_little_maid:hakurei_gohei>* 1).build();
