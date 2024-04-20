@@ -49,7 +49,7 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
                 }
             } else if(!isNull(dmgsrc.getTrueSource())){
                 // && !(dmgsrc.getTrueSource() instanceof IPlayer)
-               var trueSource as IEntityLivingBase = dmgsrc.getTrueSource();
+                 var trueSource as IEntityLivingBase = dmgsrc.getTrueSource();
            //    if(trueSource.definition.id == "twilightforest:yeti_alpha" && entity instanceof IPlayer){
            //         logger.logInfo("伤害来源。");
            //         var postion  as IPotionEffect = entity.getActivePotionEffect(<potion:twilightforest:frosted>);
@@ -60,23 +60,23 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
            //             entity.attackEntityFrom(crafttweaker.damage.IDamageSource.createMobDamage(trueSource), 5);
            //         }
            //    }
-            }else {
-                if(isNull(entityHurtEvent.entityLivingBase.definition)){
+                 
+            }
+            if(isNull(entityHurtEvent.entityLivingBase.definition)){
                     logger.logInfo("not found hurt entity defin");
                     return;
-                }
+            }
 
-                if(entityHurtEvent.entityLivingBase.definition.id.startsWith("hbm:")){
+            if(entityHurtEvent.entityLivingBase.definition.id.startsWith("hbm:")){
                         entityHurtEvent.amount = entityHurtEvent.amount/2;
                         return;
-                }
+            }
 
-                if(entityHurtEvent.entityLivingBase.definition.id.startsWith("twilightforest:")){
+            if(entityHurtEvent.entityLivingBase.definition.id.startsWith("twilightforest:")){
                         entityHurtEvent.amount = entityHurtEvent.amount*0.1;
                         return;
-                }
-            
             }
+            
         }else{
             // logger.logInfo("伤害来源为空。");
         }
