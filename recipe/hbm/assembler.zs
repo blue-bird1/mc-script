@@ -23,7 +23,8 @@ Assembler.replaceRecipe(<hbm:machine_large_turbine>, [<hbm:hull_big_steel>*1, <o
 
 // <buildinggadgets:buildingtool>.withTag({blockstate: {Name: "minecraft:air"}})
 Assembler.addRecipe(<buildinggadgets:buildingtool>.withTag({blockstate: {Name: "minecraft:air"}}), [<ore:plateIron>*8, <hbm:circuit_aluminium>*4,<ore:paneGlass>,<minecraft:stone_button>*4,], 600);
-
+Assembler.addRecipe(<buildinggadgets:destructiontool>, 
+                     [<ore:plateIron>*8, <ore:dustRedstone>*4,<ore:paneGlass>,<minecraft:stone_button>*4,], 600);
 
 Assembler.addRecipe(<hbm:red_cable>, [<hbm:plate_polymer>*2, <hbm:wire_red_copper>*2], 60);
 

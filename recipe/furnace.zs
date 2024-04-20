@@ -6,3 +6,6 @@ recipes.remove(<minecraft:furnace>);
 //#Add
 recipes.addShaped(<minecraft:furnace>, [[<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],[<minecraft:cobblestone>, <projecte:item.pe_covalence_dust:1>, <minecraft:cobblestone>], [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]]);
 //File End
+
+
+furnace.addRecipe(<appliedenergistics2:material:5>, <minecraft:quartz>, 0.0);
