@@ -14,7 +14,7 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
     // 检查事件是否是IEntityHurtEvent类型
     if (event instanceof EntityLivingHurtEvent) {
         val entityHurtEvent = event as EntityLivingHurtEvent;
-        if(isNull(entityHurtEvent.entityLivingBase) && isNull(entityHurtEvent.entityLivingBase.definition)){
+        if(isNull(entityHurtEvent.entityLivingBase) || isNull(entityHurtEvent.entityLivingBase.definition)){
           //  logger.logInfo("not found hurt entity");
             return;
         }
@@ -22,8 +22,9 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
         var dmgsrc as IDamageSource = entityHurtEvent.damageSource;
         var entity as IEntityLivingBase = event.entityLivingBase;
         if (!isNull(dmgsrc)) {
-            // logger.logInfo(toString(dmgsrc));
-            // logger.logInfo(toString(dmgsrc.getDamageType()));
+            if(dmgsrc.isMagicDamage() && dmgsrc.isExplosion()){
+                return;
+            }
             // 检查伤害来源的名称是否为null
             if (!isNull(dmgsrc.getImmediateSource()) && !isNull(dmgsrc.getImmediateSource().definition)) {
                 // 检查伤害来源的名称是否为null
@@ -43,6 +44,7 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
                         entityHurtEvent.amount = entityHurtEvent.amount/2;
                         return;
                     }
+                    return;
                 } else {
                     // 打印伤害来源的名称为null的日志信息
                     // logger.logInfo("伤害来源的名称为空。");

@@ -6,6 +6,8 @@ import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
 import crafttweaker.world.IBiome;
 import scripts.func.logDebug;
+import scripts.func.checkPlayInBiome;
+import mods.ntm.Rad;
 
 events.onPlayerTick(function(event as PlayerTickEvent){
     if(event.side != "SERVER" || event.phase != "END"){
@@ -39,6 +41,11 @@ events.onPlayerTick(function(event as PlayerTickEvent){
              player.addPotionEffect(<potion:twilightforest:frosted>.makePotionEffect(60, 4));
           }
        }
+
+       if(checkPlayInBiome(player,"Dark Forest Center")){
+          Rad.addRad(player, 50);
+       }
+
        for armor in player.armorInventory{
             if(!isNull(armor) &&!armor.definition.id.startsWith("twilightforest:") ){
                 armor.mutable().damageItem(max(armor.maxDamage / 60, 1), player);
@@ -54,11 +61,3 @@ events.onPlayerTick(function(event as PlayerTickEvent){
     // logger.logInfo(toString(player.armorInventory));
 
 });
-
-
-function checkPlayInBiome(player as IPlayer, biomeName as IData) as bool {
-    val world = crafttweaker.world.IWorld.getFromID(7);
-    val blockpos = player.position;
-    val biome as IBiome  = world.getBiome(blockpos);
-    return biome.name == biomeName;
-}
