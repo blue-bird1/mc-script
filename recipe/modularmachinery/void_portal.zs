@@ -79,3 +79,9 @@ builder7.addItemInputs([
 ]);
 builder7.addItemOutput(<appliedenergistics2:charger>* 1);
 builder7.build();
+
+RecipeBuilder.newBuilder("quartz_growth_accelerator", "void_portal", 1200).addItemInputs([
+    <hbm:ingot_meteorite>*16,
+    <appliedenergistics2:material:1> * 16,
+    <contenttweaker:emc_coin_10000> * 16,
+]).addItemOutput(<appliedenergistics2:quartz_growth_accelerator>* 1).build();
