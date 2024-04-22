@@ -1,0 +1,1 @@
+recipes.addShaped(<forge:bucketfilled>.withTag({FluidName: "fiery_essence", Amount: 1000}), [[<twilightforest:fiery_blood>, <twilightforest:fiery_blood>, <minecraft:bucket>],[<twilightforest:fiery_blood>, <twilightforest:fiery_blood>, null], [null, null, null]]);
