@@ -45,21 +45,21 @@ clearchunkdata.execute = function(command, server, sender, args) {
 clearchunkdata.register();
 
 
-val reloadEmc as ZenCommand = ZenCommand.create("reloadEmc");
-reloadEmc.getCommandUsage = function(sender) {
-    return "/reloadEmc"; // return localization key
+
+
+
+var getPlayData as ZenCommand = ZenCommand.create("getPlayData");
+getPlayData.getCommandUsage = function(sender) {
+    return "/getPlayData"; // return localization key
 };
-reloadEmc.requiredPermissionLevel = 0; // require no permission, everyone can execute the command.
-reloadEmc.execute = function(command, server, sender, args) {
+getPlayData.requiredPermissionLevel = 0; // require no permission, everyone can execute the command.
+getPlayData.execute = function(command, server, sender, args) {
     // Send a status message to player that executes the message
-    print("exec emc");
     if (args.length == 0) {
         val player = CommandUtils.getCommandSenderAsPlayer(sender);
-        player.personalEMC -=1;
-        player.personalEMC += 1;
-        player.sendChat(player.personalEMC);
+        player.sendChat(toString(player.data));
     } else {
         CommandUtils.notifyWrongUsage(command, sender);
     }
 };
-reloadEmc.register();
+getPlayData.register();

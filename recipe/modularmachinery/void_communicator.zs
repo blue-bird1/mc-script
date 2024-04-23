@@ -70,7 +70,7 @@ builder6.build();
 RecipeBuilder.newBuilder("circuit_template_4", "void_communicator", 600).addItemInputs([
     <ore:blockIron> * 1,
     <ore:itemSilicon>* 16,
-    <contenttweaker:emc_coin_10000> * 64,
+    <contenttweaker:emc_coin_10000> * base_coin,
 ]).addItemOutput(<appliedenergistics2:material:19>* 1).build();
 
 val builder7 as RecipePrimer = RecipeBuilder.newBuilder("alchemy_book", "void_communicator", 600);
