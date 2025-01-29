@@ -7,7 +7,7 @@ val builder as RecipePrimer = RecipeBuilder.newBuilder("stell", "furnace", 100);
 builder.addItemInputs([
     <ore:ingotIron> * 1,
 ]);
-builder.addEnergyPerTickInput(8000);
+builder.addEnergyPerTickInput(4096);
 builder.addFluidInput(<liquid:oxygen>*1000);
 builder.addItemOutput(<hbm:ingot_steel> * 1);
 builder.build();
@@ -18,7 +18,7 @@ builder2.addItemInputs([
     <ore:dustCobalt> *1 ,
     <ore:dustTungsten> *1,
 ]);
-builder2.addEnergyPerTickInput(8000);
+builder2.addEnergyPerTickInput(4096);
 builder2.addFluidInput(<liquid:oxygen> *1000);
 builder2.addItemOutput(<hbm:ingot_dura_steel> * 1);
 builder2.build();
