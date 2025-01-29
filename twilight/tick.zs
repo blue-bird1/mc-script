@@ -43,7 +43,6 @@ events.onPlayerTick(function(event as PlayerTickEvent){
               }
           }
           if(!ok){
-             logDebug("give a position");
              player.addPotionEffect(<potion:twilightforest:frosted>.makePotionEffect(60, 4));
           }
        }
@@ -75,6 +74,8 @@ events.onPlayerTick(function(event as PlayerTickEvent){
     };
 
     player.update(newmap);
+
+
     // logger.logInfo(toString(player.armorInventory));
 
 });

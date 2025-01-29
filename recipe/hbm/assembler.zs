@@ -11,6 +11,10 @@ Assembler.removeRecipe(<hbm:circuit_copper>);
 Assembler.replaceRecipe(<hbm:circuit_copper>, [<hbm:circuit_aluminium>, <appliedenergistics2:material:22>,<appliedenergistics2:material:23>,<appliedenergistics2:material:24>, <ore:plateAdvancedAlloy>*2, <hbm:wire_red_copper>*4], 200);
 Assembler.addRecipe(<appliedenergistics2:controller>, [<hbm:circuit_copper>*4,<ore:crystalPureCertusQuartz>*4,<hbm:ingot_meteorite_forged>*6],600);
 Assembler.addRecipe(<appliedenergistics2:part:220>, [<ore:enderpearl>*2,<hbm:ingot_meteorite_forged>,<minecraft:sticky_piston>,<hbm:crane_ejector>,<hbm:crane_inserter>], 100);
+Assembler.addRecipe(<appliedenergistics2:inscriber>, [<hbm:circuit_copper>*2, <hbm:ingot_meteorite_forged>*6, <minecraft:anvil>, <minecraft:sticky_piston>], 600);
+Assembler.addRecipe(<appliedenergistics2:molecular_assembler>, [<hbm:circuit_copper>*2, <hbm:ingot_meteorite_forged>*6, <minecraft:crafting_table>, 
+<appliedenergistics2:material:43>, <appliedenergistics2:material:44>], 600);
+
 
 Assembler.addRecipe(<modularmachinery:furnace_controller>, [<hbm:machine_difurnace_off>, <hbm:ingot_meteorite_forged>*8, <hbm:coil_gold_torus>*8,<hbm:circuit_copper>*1,<hbm:red_wire_coated>*16], 1200);
 Assembler.replaceRecipe(<hbm:circuit_red_copper>, [<hbm:circuit_copper>, <threng:material:14>, <threng:material:6>, <hbm:plate_polymer>*4,<hbm:wire_red_copper>*4], 300);
