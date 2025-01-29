@@ -23,8 +23,6 @@ recipes.addShapeless(<modularmachinery:blockenergyoutputhatch:4>, [<modularmachi
 recipes.addShapeless(<modularmachinery:blockenergyoutputhatch:5>, [<modularmachinery:blockenergyinputhatch:5>]);
 # 超级能源输出仓
 recipes.addShapeless(<modularmachinery:blockenergyoutputhatch:6>, [<modularmachinery:blockenergyinputhatch:6>]);
-# 真空能源输出仓
-recipes.addShapeless(<modularmachinery:blockenergyoutputhatch:7>, [<modularmachinery:blockenergyinputhatch:7>]);
 
 # 中型物品输出仓
 recipes.addShapeless(<modularmachinery:blockoutputbus:2>, [<modularmachinery:blockinputbus:2>]);
@@ -36,5 +34,3 @@ recipes.addShapeless(<modularmachinery:blockoutputbus:4>, [<modularmachinery:blo
 recipes.addShapeless(<modularmachinery:blockoutputbus:5>, [<modularmachinery:blockinputbus:5>]);
 # 超级物品输出仓
 recipes.addShapeless(<modularmachinery:blockoutputbus:6>, [<modularmachinery:blockinputbus:6>]);
-# 真空物品输出仓
-recipes.addShapeless(<modularmachinery:blockoutputbus:7>, [<modularmachinery:blockinputbus:7>]);
