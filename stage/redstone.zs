@@ -7,3 +7,4 @@ static RedStoneStage as Stage = ZenStager.getStage("redstone");
 RedStoneStage.addRecipeName("minecraft:comparator");
 RedStoneStage.addRecipeName("minecraft:repeater");
 RedStoneStage.addRecipeRegex("minecraft:redstone_.*");
+ZenStager.buildAll();
