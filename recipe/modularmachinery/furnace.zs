@@ -15,7 +15,6 @@ RecipeBuilder.newBuilder("stell", "furnace", 100)
 RecipeBuilder.newBuilder("dura_stell", "furnace", 600)
     .addItemInputs([
         <ore:dustIron> * 1,
-        <ore:dustCobalt> *1 ,
         <ore:dustTungsten> *2,
     ])
     .addEnergyPerTickInput(4096)
