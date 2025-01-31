@@ -14,14 +14,25 @@ builder.build();
 
 val builder2 as RecipePrimer = RecipeBuilder.newBuilder("dura_stell", "furnace", 100);
 builder2.addItemInputs([
-    <ore:ingotSteel> * 1,
+    <ore:dustIron> * 1,
     <ore:dustCobalt> *1 ,
-    <ore:dustTungsten> *1,
+    <ore:dustTungsten> *2,
 ]);
 builder2.addEnergyPerTickInput(4096);
 builder2.addFluidInput(<liquid:oxygen> *1000);
 builder2.addItemOutput(<hbm:ingot_dura_steel> * 1);
 builder2.build();
+
+val builder2 as RecipePrimer = RecipeBuilder.newBuilder("dura_stell", "furnace", 100);
+builder2.addItemInputs([
+    <ore:dustSteel> *1 ,
+    <ore:dustCobalt> *1 ,
+]);
+builder2.addEnergyPerTickInput(4096 * 4);
+builder2.addFluidInput(<liquid:oxygen> *1000);
+builder2.addItemOutput(<hbm:ingot_dura_steel> * 1);
+builder2.build();
+
 
 RecipeBuilder.newBuilder("ingot_starmetal", "furnace", 100).addItemInputs([
     <ore:ingotSaturnite> * 1,

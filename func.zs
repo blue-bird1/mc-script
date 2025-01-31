@@ -4,7 +4,7 @@ import crafttweaker.data.IData;
 import crafttweaker.player.IPlayer;
 import crafttweaker.world.IBiome;
 
-function logDebug(msg as IData){
+function logDebug(msg as IData) as void {
 
      logger.logInfo(msg);
 }

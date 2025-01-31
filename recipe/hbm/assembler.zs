@@ -36,15 +36,17 @@ Assembler.addRecipe(<hbm:red_wire_coated>, [<hbm:plate_polymer>*4, <hbm:wire_red
 
 Assembler.addRecipe(<hbm:oil_detector>, [<hbm:circuit_copper>*2, <ore:ingotDuraSteel>*4, <hbm:wire_gold>*2], 600);
 
+
+static int machineinery_batch_asssembler_time = 200;
 // 模块化机械
 // 中型流体输入仓
-Assembler.addRecipe(<modularmachinery:blockfluidinputhatch:2>,[<modularmachinery:blockfluidinputhatch:1>, <hbm:tank_steel>*4],200);
+Assembler.addRecipe(<modularmachinery:blockfluidinputhatch:2>,[<modularmachinery:blockfluidinputhatch:1>, <hbm:tank_steel>*4],machineinery_batch_asssembler_time);
 // 强化流体输入仓
-Assembler.addRecipe(<modularmachinery:blockfluidinputhatch:3>,[<modularmachinery:blockfluidinputhatch:2>, <hbm:machine_fluidtank>*4, <hbm:circuit_aluminium> *1],200);
+Assembler.addRecipe(<modularmachinery:blockfluidinputhatch:3>,[<modularmachinery:blockfluidinputhatch:2>, <hbm:machine_fluidtank>*4, <hbm:circuit_aluminium> *1],machineinery_batch_asssembler_time * 2);
 
 // 中型能源输入仓
-Assembler.addRecipe(<modularmachinery:blockenergyinputhatch:2>,[<modularmachinery:blockenergyinputhatch:1>, <hbm:red_wire_coated>*4],200);
+Assembler.addRecipe(<modularmachinery:blockenergyinputhatch:2>,[<modularmachinery:blockenergyinputhatch:1>, <hbm:red_wire_coated>*4],machineinery_batch_asssembler_time);
 // 强化能源输入仓
-Assembler.addRecipe(<modularmachinery:blockenergyinputhatch:3>,[<modularmachinery:blockenergyinputhatch:2>, <hbm:red_wire_coated>*4,<hbm:circuit_aluminium> *1],200);
+Assembler.addRecipe(<modularmachinery:blockenergyinputhatch:3>,[<modularmachinery:blockenergyinputhatch:2>, <hbm:red_wire_coated>*4,<hbm:circuit_aluminium> *1],machineinery_batch_asssembler_time *2);
 // 大型能源输入仓
-Assembler.addRecipe(<modularmachinery:blockenergyinputhatch:4>,[<modularmachinery:blockenergyinputhatch:3>, <hbm:red_wire_coated>*4,  <hbm:circuit_copper>*1 ],200);
+Assembler.addRecipe(<modularmachinery:blockenergyinputhatch:4>,[<modularmachinery:blockenergyinputhatch:3>, <hbm:red_wire_coated>*4,  <hbm:circuit_copper>*1 ],machineinery_batch_asssembler_time * 4 );
