@@ -24,14 +24,14 @@ builder2.addItemOutput(<hbm:ingot_dura_steel> * 1);
 builder2.build();
 
 val builder3 as RecipePrimer = RecipeBuilder.newBuilder("dura_stell", "furnace", 100);
-builder2.addItemInputs([
+builder3.addItemInputs([
     <ore:dustSteel> *1 ,
     <ore:dustCobalt> *1 ,
 ]);
-builder2.addEnergyPerTickInput(4096 * 4);
-builder2.addFluidInput(<liquid:oxygen> *1000);
-builder2.addItemOutput(<hbm:ingot_dura_steel> * 1);
-builder2.build();
+builder3.addEnergyPerTickInput(4096 * 4);
+builder3.addFluidInput(<liquid:oxygen> *1000);
+builder3.addItemOutput(<hbm:ingot_dura_steel> * 1);
+builder3.build();
 
 
 RecipeBuilder.newBuilder("ingot_starmetal", "furnace", 100).addItemInputs([
