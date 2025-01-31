@@ -3,35 +3,35 @@ import mods.modularmachinery.RecipePrimer;
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.IngredientArrayBuilder; //此行仅限模块化机械：社区版
 
-val builder as RecipePrimer = RecipeBuilder.newBuilder("stell", "furnace", 100);
-builder.addItemInputs([
-    <ore:ingotIron> * 1,
-]);
-builder.addEnergyPerTickInput(4096);
-builder.addFluidInput(<liquid:oxygen>*1000);
-builder.addItemOutput(<hbm:ingot_steel> * 1);
-builder.build();
+RecipeBuilder.newBuilder("stell", "furnace", 100)
+    .addItemInputs([
+        <ore:ingotIron> * 1,
+    ])
+    .addEnergyPerTickInput(4096)
+    .addFluidInput(<liquid:oxygen>*1000)
+    .addItemOutput(<hbm:ingot_steel> * 1)
+    .build();
 
-val builder2 as RecipePrimer = RecipeBuilder.newBuilder("dura_stell", "furnace", 100);
-builder2.addItemInputs([
-    <ore:dustIron> * 1,
-    <ore:dustCobalt> *1 ,
-    <ore:dustTungsten> *2,
-]);
-builder2.addEnergyPerTickInput(4096);
-builder2.addFluidInput(<liquid:oxygen> *1000);
-builder2.addItemOutput(<hbm:ingot_dura_steel> * 1);
-builder2.build();
+RecipeBuilder.newBuilder("dura_stell", "furnace", 600)
+    .addItemInputs([
+        <ore:dustIron> * 1,
+        <ore:dustCobalt> *1 ,
+        <ore:dustTungsten> *2,
+    ])
+    .addEnergyPerTickInput(4096)
+    .addFluidInput(<liquid:oxygen> *1000)
+    .addItemOutput(<hbm:ingot_dura_steel> * 1)
+    .build();
 
-val builder3 as RecipePrimer = RecipeBuilder.newBuilder("dura_stell", "furnace", 100);
-builder3.addItemInputs([
-    <ore:dustSteel> *1 ,
-    <ore:dustCobalt> *1 ,
-]);
-builder3.addEnergyPerTickInput(4096 * 4);
-builder3.addFluidInput(<liquid:oxygen> *1000);
-builder3.addItemOutput(<hbm:ingot_dura_steel> * 1);
-builder3.build();
+RecipeBuilder.newBuilder("dura_stell2", "furnace", 100)
+    .addItemInputs([
+        <ore:dustSteel> *1 ,
+        <ore:dustCobalt> *1 ,
+    ])
+    .addEnergyPerTickInput(4096 * 4)
+    .addFluidInput(<liquid:oxygen> *1000)
+    .addItemOutput(<hbm:ingot_dura_steel> * 1)
+    .build();
 
 
 RecipeBuilder.newBuilder("ingot_starmetal", "furnace", 100).addItemInputs([
