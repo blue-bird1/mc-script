@@ -1,5 +1,7 @@
 #loader crafttweaker reloadable
 import mods.ntm.Assembler;
+import scripts.recipe.hbm.const.machineinery_batch_asssembler_time;
+
 Assembler.addRecipe(<hbm:machine_press>, [<ore:blockIron>*4, <minecraft:furnace>,<minecraft:sticky_piston>], 300);
 Assembler.addRecipe(<hbm:machine_coal_off>, [<ore:ingotSteel>*4, <minecraft:furnace>,<hbm:tank_steel>,<hbm:coil_copper_torus>*4], 300);
 
@@ -37,7 +39,6 @@ Assembler.addRecipe(<hbm:red_wire_coated>, [<hbm:plate_polymer>*4, <hbm:wire_red
 Assembler.addRecipe(<hbm:oil_detector>, [<hbm:circuit_copper>*2, <ore:ingotDuraSteel>*4, <hbm:wire_gold>*2], 600);
 
 
-static machineinery_batch_asssembler_time = 200;
 // 模块化机械
 // 中型流体输入仓
 Assembler.addRecipe(<modularmachinery:blockfluidinputhatch:2>,[<modularmachinery:blockfluidinputhatch:1>, <hbm:tank_steel>*4],machineinery_batch_asssembler_time);
