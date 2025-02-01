@@ -1,6 +1,6 @@
 import mods.ntm.Anvil;
 
-Anvil.removeRecipe([<hbm:plate_copper>]);
+// Anvil.removeRecipe([<hbm:plate_copper>]);
 Anvil.removeRecipe([<hbm:machine_assembler>]);
 Anvil.removeRecipe([<hbm:motor>*2]);
 

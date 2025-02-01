@@ -27,7 +27,7 @@ RecipeBuilder.newBuilder("dura_stell2", "furnace", 100)
         <ore:dustSteel> *1 ,
         <ore:dustCobalt> *1 ,
     ])
-    .addEnergyPerTickInput(4096 * 4)
+    .addEnergyPerTickInput(4096 * 4 * 6)
     .addFluidInput(<liquid:oxygen> *1000)
     .addItemOutput(<hbm:ingot_dura_steel> * 1)
     .build();

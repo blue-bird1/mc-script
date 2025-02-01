@@ -22,3 +22,10 @@ recipes.remove(<appliedenergistics2:material:52>);
 
 # 分子装配室
 recipes.remove(<appliedenergistics2:molecular_assembler>);
+
+
+recipes.remove(<appliedenergistics2:material:36>);
+
+recipes.remove(<appliedenergistics2:material:37>);
+
+recipes.remove(<appliedenergistics2:material:38>);

@@ -15,7 +15,7 @@ recipes.remove(<hbm:circuit_aluminium>);
 recipes.remove(<hbm:circuit_raw>);
 recipes.remove(<hbm:rbmk_outgasser>);
 
-recipes.removeByRegex("hbm:cobalt.+");
+// recipes.removeByRegex("hbm:cobalt.+");
 recipes.removeByRegex("hbm:stamp_.+_flat");
 recipes.removeByRegex("hbm:blades_.+");
 // wire
@@ -31,6 +31,10 @@ recipes.remove(<hbm:furnace_iron>);
 recipes.remove(<hbm:powder_tcalloy>);
 recipes.remove(<hbm:inf_water>);
 recipes.remove(<hbm:oil_detector>);
+
+recipes.remove(<hbm:pipes_steel>);
+// 修改<hbm:pipes_steel> 配方为3个竖着的 <ore:plateSteel>
+recipes.addShaped(<hbm:pipes_steel>, [[null, <ore:plateSteel>, null], [null, <ore:plateSteel>, null], [null, <ore:plateSteel>, null]]);
 
 recipes.removeByRegex("hbm:bobmazon_.+");
 
