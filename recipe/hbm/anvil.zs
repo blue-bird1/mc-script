@@ -24,7 +24,7 @@ Anvil.addRecipe(<hbm:blades_aluminum>,[<ore:ingotAluminum>,<ore:plateAluminum>*4
 Anvil.addRecipe(<hbm:blades_gold>,[<ore:ingotGold>,<ore:plateGold>*4],2);
 Anvil.addRecipe(<hbm:blades_iron>,[<ore:plateIron>*4, <ore:ingotIron>],2);
 Anvil.addRecipe(<hbm:blades_steel>, [<ore:plateSteel>*4, <ore:ingotSteel>],3);
-Anvil.addRecipe(<hbm:blades_titanium>, [<ore:platetitanium>*4, <ore:ingotTitanium>],3);
+Anvil.addRecipe(<hbm:blades_titanium>, [<ore:plateTitanium>*4, <ore:ingotTitanium>],3);
 Anvil.addRecipe(<hbm:blades_advanced_alloy>, [<ore:plateAdvancedAlloy>*4, <ore:ingotAdvancedAlloy>],4);
 Anvil.addRecipe(<hbm:blades_schrabidium>, [<ore:ingotSchrabidium>,<ore:plateSchrabidium>*4],5);
 // Anvil.addRecipe(<hbm:blades_desh_flat>,[<ore:ingotWorkersAlloy>,<ore:plateSchrabidium> ],6);
