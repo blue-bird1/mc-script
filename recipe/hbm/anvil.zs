@@ -1,8 +1,14 @@
 import mods.ntm.Anvil;
-
+import scripts.recipe.hbm.const.upgrades;
 // Anvil.removeRecipe([<hbm:plate_copper>]);
 Anvil.removeRecipe([<hbm:machine_assembler>]);
 Anvil.removeRecipe([<hbm:motor>*2]);
+
+for key, value in upgrades {
+    for key, item in value {
+        Anvil.removeRecipe([item]);
+    }
+}
 
 Anvil.addRecipe(<hbm:red_wire_coated>,[<hbm:wire_red_copper>*4, <hbm:plate_polymer>*4], 2);
 Anvil.addRecipe(<hbm:red_cable>,[<hbm:wire_red_copper>*2, <hbm:plate_polymer>*4],2);

@@ -14,10 +14,12 @@ recipes.remove(<hbm:circuit_aluminium>);
 
 recipes.remove(<hbm:circuit_raw>);
 recipes.remove(<hbm:rbmk_outgasser>);
+recipes.remove(<hbm:machine_mixer>);
 
 // recipes.removeByRegex("hbm:cobalt.+");
 recipes.removeByRegex("hbm:stamp_.+_flat");
 recipes.removeByRegex("hbm:blades_.+");
+recipes.removeByRegex("hbm:upgrade_.+");
 // wire
 recipes.remove(<hbm:plate_polymer>);
 recipes.remove(<hbm:red_cable>);

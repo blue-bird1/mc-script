@@ -6,7 +6,7 @@ recipes.addShaped(<projecte:item.pe_fuel:1>, [[<projecte:item.pe_fuel>, <project
 
 
 recipes.addShaped(<projecte:item.pe_water_orb>, [[<minecraft:water_bucket>, <minecraft:water_bucket>, <minecraft:water_bucket>],[<minecraft:water_bucket>, <projecte:item.pe_philosophers_stone>, <minecraft:water_bucket>], [<minecraft:water_bucket>, <minecraft:water_bucket>, <minecraft:water_bucket>]]);
-recipes.addShaped(<projecte:item.pe_evertide_amulet>, [[<hbm:ingot_starmetal>, <projecte:item.pe_fuel:2>, <hbm:ingot_starmetal>],[<projecte:item.pe_fuel:2>, <projecte:item.pe_water_orb>, <projecte:item.pe_fuel:2>], [<hbm:ingot_starmetal>, <projecte:item.pe_fuel:2>, <hbm:ingot_starmetal>]]);
+recipes.addShaped(<projecte:item.pe_evertide_amulet>, [[<ore:ingotKnightmetal>, <projecte:item.pe_fuel:2>, <ore:ingotKnightmetal>],[<projecte:item.pe_fuel:2>, <projecte:item.pe_water_orb>, <projecte:item.pe_fuel:2>], [<ore:ingotKnightmetal>, <projecte:item.pe_fuel:2>, <ore:ingotKnightmetal>]]);
 
 
 recipes.addShaped(<projecte:item.pe_lava_orb>, [[<contenttweaker:lava_ord>, <twilightforest:lamp_of_cinders>, <contenttweaker:lava_ord>],[<contenttweaker:lava_ord>, <projecte:item.pe_philosophers_stone>, <contenttweaker:lava_ord>], [<contenttweaker:lava_ord>, <contenttweaker:lava_ord>, <contenttweaker:lava_ord>]]);

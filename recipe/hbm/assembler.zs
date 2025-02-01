@@ -1,6 +1,7 @@
 // #loader crafttweaker reloadable
 import mods.ntm.Assembler;
 import scripts.recipe.hbm.const.machineinery_batch_asssembler_time;
+import scripts.recipe.hbm.const.upgrades;
 
 val basic_cricult = <hbm:circuit_aluminium>;
 val basic_cricult_2 = <hbm:circuit_copper>;
@@ -42,6 +43,10 @@ Assembler.addRecipe(<hbm:red_wire_coated>, [<hbm:plate_polymer>*4, <hbm:wire_red
 
 Assembler.addRecipe(<hbm:oil_detector>, [<hbm:circuit_copper>*2, <ore:ingotDuraSteel>*4, <hbm:wire_gold>*2], 600);
 
+// <hbm:machine_mixer> recipt by <ore:plateSteel> *4 ,<hbm:bolt_dura_steel>*4, <ore:blockGlass> *2, <hbm:motor>
+
+Assembler.addRecipe(<hbm:machine_mixer>, [<ore:plateSteel> *4, <hbm:bolt_dura_steel>*4, <ore:blockGlass> *2, <hbm:motor>], 600);
+
 val ae2_time as int = 100;
 // ae 2 
 Assembler.addRecipe(<appliedenergistics2:material:36>,[<appliedenergistics2:material:35> * 4, basic_cricult , <appliedenergistics2:quartz_glass>, <ore:dustRedstone> *4 ], ae2_time);
@@ -61,3 +66,16 @@ Assembler.addRecipe(<modularmachinery:blockenergyinputhatch:2>,[<modularmachiner
 Assembler.addRecipe(<modularmachinery:blockenergyinputhatch:3>,[<modularmachinery:blockenergyinputhatch:2>, <hbm:red_wire_coated>*4,basic_cricult *1],machineinery_batch_asssembler_time *2);
 // 大型能源输入仓
 Assembler.addRecipe(<modularmachinery:blockenergyinputhatch:4>,[<modularmachinery:blockenergyinputhatch:3>, <hbm:red_wire_coated>*4,  <hbm:circuit_copper>*1 ],machineinery_batch_asssembler_time * 4 );
+
+
+for key, value in upgrades {
+    for key, item in value {
+        Assembler.removeRecipe(item);
+    }
+}
+
+Assembler.addRecipe(<hbm:upgrade_speed_1>, [<ore:dustRedstone>*4, <ore:dustDuraSteel>*2,<hbm:upgrade_template>, <hbm:wire_red_copper>*6,<hbm:coil_gold_torus>*2, <hbm:circuit_copper>*1 ], 300);
+// <hbm:upgrade_power_1>
+Assembler.addRecipe(<hbm:upgrade_power_1>, [<ore:dustLapis> *4, <ore:dustDuraSteel>*2,<hbm:upgrade_template>, <hbm:wire_red_copper>*6,<hbm:coil_gold_torus>*2, <hbm:circuit_copper>*1 ], 300);
+// <hbm:upgrade_effect_1>
+Assembler.addRecipe(<hbm:upgrade_effect_1>, [<ore:dustEmerald> *4, <ore:dustDuraSteel>*2,<hbm:upgrade_template>, <hbm:wire_red_copper>*6,<hbm:coil_gold_torus>*2, <hbm:circuit_copper>*1 ], 300);
