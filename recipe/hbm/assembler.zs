@@ -18,6 +18,7 @@ Assembler.removeRecipe(basic_cricult_3);
 
 Assembler.replaceRecipe(<hbm:circuit_copper>, [basic_cricult, <appliedenergistics2:material:22>,<appliedenergistics2:material:23>,<appliedenergistics2:material:24>, <ore:plateAdvancedAlloy>*2, <hbm:wire_red_copper>*4], 200);
 // <hbm:circuit_aluminium>  by recipes.addShaped(<hbm:circuit_aluminium> , [[null, <hbm:wire_aluminium>, null],[<appliedenergistics2:material:16>, <appliedenergistics2:material:17>, <appliedenergistics2:material:18>], [null, <hbm:plate_copper>, null]]);
+Assembler.removeRecipe(<hbm:circuit_aluminium>);
 Assembler.addRecipe(<hbm:circuit_aluminium>, [<hbm:wire_aluminium>, <appliedenergistics2:material:16>, <appliedenergistics2:material:17>, <appliedenergistics2:material:18>], 100);
 
 Assembler.addRecipe(<appliedenergistics2:controller>, [<hbm:circuit_copper>*4,<ore:crystalPureCertusQuartz>*4,<hbm:ingot_meteorite_forged>*6],600);

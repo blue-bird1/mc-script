@@ -13,7 +13,7 @@ import crafttweaker.potions.IPotionEffect;
 events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
     // 检查事件是否是IEntityHurtEvent类型
     if (event instanceof EntityLivingHurtEvent) {
-        val entityHurtEvent  = event as EntityLivingHurtEvent;
+        val entityHurtEvent as EntityLivingHurtEvent  = event ;
         if(isNull(entityHurtEvent.entityLivingBase) || isNull(entityHurtEvent.entityLivingBase.definition)){
           //  logger.logInfo("not found hurt entity");
             return;

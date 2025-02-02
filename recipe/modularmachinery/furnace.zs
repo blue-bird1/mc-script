@@ -68,3 +68,14 @@ RecipeBuilder.newBuilder("ingot_tcalloy", "furnace", 100).addItemInputs([
     <ore:ingotSteel> *1
 ]).addEnergyPerTickInput(800000).addFluidInput(<liquid:oxygen> *1000).addFluidInput(<liquid:hydrogen> * 1000).addItemOutput(<hbm:ingot_tcalloy>* 1).build();
 
+
+// fluid output <liquid:knightmetal>, input <twilightforest:phantom_helmet>
+RecipeBuilder.newBuilder("knightmetal", "furnace", 100).addItemInputs([
+    <twilightforest:phantom_helmet>*1
+]).addEnergyPerTickInput(4096).addFluidInput(<liquid:oxygen> *1000).addItemOutput(<twilightforest:knightmetal_ingot>* 1).build();
+// input <twilightforest:phantom_chestplate>
+RecipeBuilder.newBuilder("phantom_chestplate", "furnace", 100).addItemInputs([
+    <twilightforest:phantom_chestplate>*1
+]).addEnergyPerTickInput(4096).addFluidInput(<liquid:oxygen> *1000).addItemOutput(<twilightforest:knightmetal_ingot> * 2).build();
+
+
