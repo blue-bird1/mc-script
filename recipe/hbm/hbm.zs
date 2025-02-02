@@ -45,13 +45,6 @@ recipes.addShapeless("powder_coal",<hbm:powder_coal>, [<ore:gemCoal>, <ore:grave
 recipes.addShaped(<hbm:bottle_empty>, [[null, <hbm:cap_nuka>, null],[<minecraft:glass_pane>, null, <minecraft:glass_pane>], [<minecraft:glass_pane>, <minecraft:glass_pane>, <minecraft:glass_pane>]]);
 
 
-// 移除电路板合成配方
-recipes.remove(<hbm:circuit_schrabidium>);
-recipes.remove(<hbm:circuit_gold>);
-recipes.remove(<hbm:circuit_red_copper>);
-recipes.remove(<hbm:circuit_copper>);
-recipes.remove(<hbm:circuit_aluminium>);
-
 recipes.remove(<hbm:rbmk_outgasser>);
 recipes.addShaped(<hbm:rbmk_outgasser>, [[<hbm:steel_grate>, <minecraft:hopper>, <hbm:steel_grate>],[<hbm:steel_grate>, <hbm:rbmk_blank>, <hbm:steel_grate>], [<hbm:steel_grate>, <hbm:nugget_technetium>, <hbm:steel_grate>]]);
 recipes.addShaped(<hbm:circuit_raw>, [[null, <hbm:wire_aluminium>, null],[<appliedenergistics2:material:16>, <appliedenergistics2:material:17>, <appliedenergistics2:material:18>], [null, <hbm:plate_copper>, null]]);

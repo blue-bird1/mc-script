@@ -33,16 +33,30 @@ RecipeBuilder.newBuilder("dura_stell2", "furnace", 100)
     .build();
 
 
-RecipeBuilder.newBuilder("ingot_starmetal", "furnace", 100).addItemInputs([
+RecipeBuilder.newBuilder("ingot_starmetal", "furnace", 600).addItemInputs([
     <ore:ingotSaturnite> * 1,
     <hbm:ingot_meteorite> *1 ,
 ]).addEnergyPerTickInput(80000).addFluidInput(<liquid:oxygen> *1000).addItemOutput(<hbm:ingot_starmetal>* 1).build();
 
 RecipeBuilder.newBuilder("ingotFluixSteel", "furnace", 100).addItemInputs([
-    <ore:ingotDuraSteel> * 1,
     <ore:ingotStarmetal> *1 ,
+    <threng:material:1> *1,
+    <ore:dustSteel> *1
+]).addEnergyPerTickInput(4096 * 20).addFluidInput(<liquid:oxygen> *1000).addFluidInput(<liquid:sulfuric_acid> * 1000).addItemOutput(<threng:material>* 1).build();
+
+
+RecipeBuilder.newBuilder("ingotFluixSteel2", "furnace", 1200).addItemInputs([
+    <threng:material:2>,
+
+]).addEnergyPerTickInput(4096 * 200).addFluidInput(<liquid:oxygen> *1000).addFluidInput(<liquid:solvent> * 1000).addItemOutput(<threng:material>* 1).build();
+
+// <threng:material:2> *1 by  <ore:dustIron> * 1 and  <threng:material:1> *1 
+RecipeBuilder.newBuilder("threng_material_2", "furnace", 300).addItemInputs([
+    <ore:dustIron> * 1,
     <threng:material:1> *1
-]).addEnergyPerTickInput(80000).addFluidInput(<liquid:oxygen> *1000).addItemOutput(<threng:material>* 1).build();
+]).addEnergyPerTickInput(4096 * 20).addFluidInput(<liquid:oxygen>*1000).addFluidInput(<liquid:sulfuric_acid>*1000).addItemOutput(<threng:material:2>*1).build();
+
+
 
 RecipeBuilder.newBuilder("ingot_meteorite_forged", "furnace", 100).addItemInputs([
     <hbm:ingot_meteorite> * 1,
@@ -53,5 +67,4 @@ RecipeBuilder.newBuilder("ingot_tcalloy", "furnace", 100).addItemInputs([
     <ore:ingotTc99>* 1,
     <ore:ingotSteel> *1
 ]).addEnergyPerTickInput(800000).addFluidInput(<liquid:oxygen> *1000).addFluidInput(<liquid:hydrogen> * 1000).addItemOutput(<hbm:ingot_tcalloy>* 1).build();
-
 
