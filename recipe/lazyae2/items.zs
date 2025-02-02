@@ -1,1 +1,0 @@
-recipes.remove(<threng:material:4>);

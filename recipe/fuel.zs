@@ -1,1 +1,0 @@
-recipes.addShaped(<projecte:item.pe_fuel>, [[<minecraft:coal>, <minecraft:coal>, <minecraft:coal>],[<minecraft:coal>, <projecte:item.pe_covalence_dust>, <minecraft:coal>], [<minecraft:coal>, <minecraft:coal>, <minecraft:coal>]]);
