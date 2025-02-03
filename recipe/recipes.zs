@@ -30,7 +30,9 @@ val delete_list = [
     <storagedrawers:upgrade_storage:*>,
     <storagedrawers:upgrade_template>,
     <hbm:factory_titanium_core>,
-    <hbm:factory_titanium_hull>
+    <hbm:factory_titanium_hull>,
+    <hbm:gun_revolver_nightmare>,
+    <appliedenergistics2:crafting_accelerator>
 
 ] as IItemStack[];
 for item in delete_list {
@@ -44,6 +46,10 @@ recipes.removeByMod("buildinggadgets");
 recipes.removeByMod("touhou_little_maid");
 
 recipes.removeByMod("projecte");
+
+recipes.addShaped(<hbm:gun_revolver_nightmare>, [[null, null, null],[<hbm:plate_steel>, <hbm:powder_advanced_alloy>, <hbm:mechanism_revolver_2>], [null, <hbm:plate_aluminium>, <ore:plankWood>]]);
+recipes.addShaped(<appliedenergistics2:crafting_accelerator>, [[null, <appliedenergistics2:part:16>, null],[<hbm:circuit_copper>, <appliedenergistics2:crafting_unit>, <hbm:circuit_copper>], [null, <appliedenergistics2:part:16>, null]]);
+recipes.addShaped(<modularmachinery:blockparallelcontroller>, [[null, <appliedenergistics2:crafting_accelerator>, null],[<appliedenergistics2:crafting_accelerator>, <modularmachinery:blockcasing>, <appliedenergistics2:crafting_accelerator>], [null, <appliedenergistics2:crafting_accelerator>, null]]);
 
 recipes.addShapeless(<storagedrawers:upgrade_template>, [<hbm:battery_generic>.withTag({charge: 5000 as long}).onlyWithTag({charge: 5000 as long}),<ore:drawerBasic>]);
 recipes.addShapeless(<storagedrawers:upgrade_storage:4>, [<aeadditions:storage.component>,<storagedrawers:upgrade_template>]);
@@ -128,6 +134,16 @@ recipes.addShaped(<projecte:item.pe_lava_orb>, [[<contenttweaker:lava_ord>, <twi
 
 recipes.addShaped(<projecte:alchemical_chest>, [[<projecte:item.pe_covalence_dust>, <projecte:item.pe_covalence_dust:1>, <projecte:item.pe_covalence_dust:2>],[<minecraft:ender_pearl>, <minecraft:chest>, <minecraft:ender_pearl>], [<minecraft:ender_pearl>, <minecraft:ender_pearl>, <minecraft:ender_pearl>]]);
 recipes.addShaped(<projecte:item.pe_alchemical_bag>, [[<projecte:item.pe_covalence_dust:2>, <projecte:item.pe_covalence_dust:2>, <projecte:item.pe_covalence_dust:2>],[<minecraft:wool>, <projecte:alchemical_chest>, <minecraft:wool>], [<minecraft:ender_pearl>, <minecraft:wool>, <minecraft:ender_pearl>]]);
+recipes.addShaped(<projecte:item.pe_divining_rod_3>, [[<projecte:item.pe_covalence_dust:2>, <projecte:item.pe_covalence_dust:2>, <projecte:item.pe_covalence_dust:2>],[<projecte:item.pe_covalence_dust:2>, <projecte:item.pe_divining_rod_2>, <projecte:item.pe_covalence_dust:2>], [<projecte:item.pe_covalence_dust:2>, <projecte:item.pe_covalence_dust:2>, <projecte:item.pe_covalence_dust:2>]]);
+recipes.addShaped(<projecte:item.pe_divining_rod_2>, [[<projecte:item.pe_covalence_dust:1>, <projecte:item.pe_covalence_dust:1>, <projecte:item.pe_covalence_dust:1>],[<projecte:item.pe_covalence_dust:1>, <projecte:item.pe_divining_rod_1>, <projecte:item.pe_covalence_dust:1>], [<projecte:item.pe_covalence_dust:1>, <projecte:item.pe_covalence_dust:1>, <projecte:item.pe_covalence_dust:1>]]);
+recipes.addShaped(<projecte:item.pe_divining_rod_1>, [[null, <minecraft:ender_eye>, null],[<projecte:item.pe_covalence_dust>, <minecraft:stick>, <projecte:item.pe_covalence_dust>], [null, <minecraft:stick>, null]]);
+
+recipes.addShaped(<projecte:item.pe_klein_star:1>, [[<projecte:item.pe_klein_star>, <twilightforest:block_storage>, <projecte:item.pe_klein_star>],[<twilightforest:block_storage>, <projecte:item.pe_klein_star>, <twilightforest:block_storage>], [<projecte:item.pe_klein_star>, <twilightforest:block_storage>, <projecte:item.pe_klein_star>]]);
+recipes.addShaped(<projecte:item.pe_klein_star:2>, [[<projecte:item.pe_klein_star:1>, <twilightforest:knightmetal_block>, <projecte:item.pe_klein_star:1>],[<twilightforest:knightmetal_block>, <projecte:item.pe_klein_star:1>, <twilightforest:knightmetal_block>], [<projecte:item.pe_klein_star:1>, <twilightforest:knightmetal_block>, <projecte:item.pe_klein_star:1>]]);
+recipes.addShaped(<projecte:item.pe_klein_star:3>, [[<projecte:item.pe_klein_star:2>, <twilightforest:block_storage:1>, <projecte:item.pe_klein_star:2>],[<twilightforest:block_storage:1>, <projecte:item.pe_klein_star:2>, <twilightforest:block_storage:1>], [<projecte:item.pe_klein_star:2>, <twilightforest:block_storage:1>, <projecte:item.pe_klein_star:2>]]);
+recipes.addShaped(<projecte:item.pe_klein_star:5>, [[<projecte:item.pe_klein_star:4>, <projecte:matter_block:1>, <projecte:item.pe_klein_star:4>],[<projecte:matter_block:1>, <projecte:item.pe_klein_star:4>, <projecte:matter_block:1>], [<projecte:item.pe_klein_star:4>, <projecte:matter_block:1>, <projecte:item.pe_klein_star:4>]]);
+recipes.addShaped(<projecte:item.pe_klein_star:4>, [[<projecte:item.pe_klein_star:3>, <projecte:matter_block>, <projecte:item.pe_klein_star:3>],[<projecte:matter_block>, <projecte:item.pe_klein_star:3>, <projecte:matter_block>], [<projecte:item.pe_klein_star:3>, <projecte:matter_block>, <projecte:item.pe_klein_star:3>]]);
+recipes.addShaped(<projecte:item.pe_klein_star>, [[<projecte:item.pe_fuel:2>, <projecte:item.pe_alchemical_bag>, <projecte:item.pe_fuel:2>],[<projecte:item.pe_fuel:2>, <projecte:item.pe_philosophers_stone>, <projecte:item.pe_fuel:2>], [<projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>]]);
 
 
 recipes.addShaped(<appliedenergistics2:material:44>, [[<hbm:circuit_copper>, <appliedenergistics2:material:1>, <hbm:ingot_meteorite_forged>],[null, null, null], [null, null, null]]);

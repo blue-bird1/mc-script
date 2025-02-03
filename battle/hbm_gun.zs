@@ -49,6 +49,7 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
                 } else {
                     // 打印伤害来源的名称为null的日志信息
                     // logger.logInfo("伤害来源的名称为空。");
+                    return;
                 }
         } else if(!isNull(dmgsrc.getTrueSource())){
                 // && !(dmgsrc.getTrueSource() instanceof IPlayer)
