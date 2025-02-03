@@ -1,4 +1,4 @@
-#loader reloadable
+#reloadable
 import crafttweaker.event.IEventCancelable;
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.EntityLivingHurtEvent;
@@ -8,25 +8,26 @@ import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.player.IPlayer;
 import crafttweaker.potions.IPotionEffect;
 
-
+import crafttweaker.event.EntityLivingDamageEvent;
 // 监听生物受到伤害的事件
 events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
     // 检查事件是否是IEntityHurtEvent类型
-    if (event instanceof EntityLivingHurtEvent) {
         val entityHurtEvent as EntityLivingHurtEvent  = event ;
         if(isNull(entityHurtEvent.entityLivingBase) || isNull(entityHurtEvent.entityLivingBase.definition)){
           //  logger.logInfo("not found hurt entity");
             return;
         }
-
         var dmgsrc as IDamageSource = entityHurtEvent.damageSource;
-        var entity as IEntityLivingBase = event.entityLivingBase;
-        if (!isNull(dmgsrc)) {
-            if(dmgsrc.isMagicDamage() && dmgsrc.isExplosion()){
+        // if dmgsrc is null return
+        if(!isNull(dmgsrc) && dmgsrc.isMagicDamage() && dmgsrc.isExplosion()){
                 return;
-            }
+        }
+        var entity as IEntityLivingBase = event.entityLivingBase;
+        
             // 检查伤害来源的名称是否为null
-            if (!isNull(dmgsrc.getImmediateSource()) && !isNull(dmgsrc.getImmediateSource().definition)) {
+        if (!isNull(dmgsrc) && !isNull(dmgsrc.getImmediateSource()) && !isNull(dmgsrc.getImmediateSource().definition)) {
+
+               
                 // 检查伤害来源的名称是否为null
                 if (!isNull(entityHurtEvent.damageSource.getImmediateSource().definition.id)) {
                     // 打印伤害来源的名称
@@ -49,7 +50,7 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
                     // 打印伤害来源的名称为null的日志信息
                     // logger.logInfo("伤害来源的名称为空。");
                 }
-            } else if(!isNull(dmgsrc.getTrueSource())){
+        } else if(!isNull(dmgsrc.getTrueSource())){
                 // && !(dmgsrc.getTrueSource() instanceof IPlayer)
                  var trueSource as IEntityLivingBase = dmgsrc.getTrueSource();
            //    if(trueSource.definition.id == "twilightforest:yeti_alpha" && entity instanceof IPlayer){
@@ -63,23 +64,18 @@ events.onEntityLivingHurt(function(event as EntityLivingHurtEvent){
            //         }
            //    }
                  
-            }
-            if(isNull(entityHurtEvent.entityLivingBase.definition)){
+        }
+        if(isNull(entityHurtEvent.entityLivingBase.definition)){
                     return;
-            }
+        }
 
-            if(entityHurtEvent.entityLivingBase.definition.id.startsWith("hbm:")){
+        if(entityHurtEvent.entityLivingBase.definition.id.startsWith("hbm:")){
                         entityHurtEvent.amount = entityHurtEvent.amount/2;
                         return;
-            }
-
-            if(entityHurtEvent.entityLivingBase.definition.id.startsWith("twilightforest:")){
-                        entityHurtEvent.amount = entityHurtEvent.amount*0.1;
-                        return;
-            }
-            
-        }else{
-            // logger.logInfo("伤害来源为空。");
         }
-    }
+
+        if(entityHurtEvent.entityLivingBase.definition.id.startsWith("twilightforest:")){
+                        entityHurtEvent.amount = entityHurtEvent.amount*0.25;
+                        return;
+        }
 });
