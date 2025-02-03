@@ -1,4 +1,5 @@
 #priority 2
+#reloadable
 import crafttweaker.item.IItemStack;
 static machineinery_batch_asssembler_time as int = 200;
 

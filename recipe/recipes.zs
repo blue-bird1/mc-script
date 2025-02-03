@@ -10,7 +10,7 @@ val delete_list = [
     <minecraft:furnace>,
     <minecraft:fishing_rod>,
     <minecraft:melon_seeds>,
-    <minecraft:pumpkin_seeds>,
+   // <minecraft:pumpkin_seeds>,
     <minecraft:golden_apple>,
     <twilightforest:charm_of_life_2>,
     <threng:material:4>,
@@ -28,7 +28,9 @@ val delete_list = [
     <appliedenergistics2:material:37>,
     <appliedenergistics2:material:38>,
     <storagedrawers:upgrade_storage:*>,
-    <storagedrawers:upgrade_template>
+    <storagedrawers:upgrade_template>,
+    <hbm:factory_titanium_core>,
+    <hbm:factory_titanium_hull>
 
 ] as IItemStack[];
 for item in delete_list {

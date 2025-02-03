@@ -226,3 +226,10 @@ RecipeBuilder.newBuilder("enchanted_book15", "void_communicator", 600).addItemIn
     <minecraft:anvil>,
     coin_10000 * enchanted_book_price
 ]).addItemOutput(<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 34 as short}]})* 1).build();
+
+RecipeBuilder.newBuilder("factory", "void_communicator", 600).addItemInputs([
+    <hbm:machine_assembler>*64,
+    <appliedenergistics2:controller>,
+    <hbm:red_cable>*64,
+    <hbm:machine_industrial_generator>
+]).addItemOutput(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:factory"})).build();
