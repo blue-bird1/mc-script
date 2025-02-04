@@ -47,6 +47,12 @@ recipes.removeByMod("touhou_little_maid");
 
 recipes.removeByMod("projecte");
 
+recipes.removeShapeless(<hbm:biomass> * 4, [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>, <ore:plankWood>]);
+recipes.removeShapeless(<hbm:biomass> * 6, [<ore:logWood>, <ore:logWood>, <ore:logWood>]);
+recipes.removeShapeless(<hbm:biomass> * 4, [<ore:treeLeaves>, <ore:treeLeaves>, <ore:treeLeaves>, <ore:treeLeaves>, <ore:treeLeaves>]);
+
+
+
 recipes.addShaped(<hbm:gun_revolver_nightmare>, [[null, null, null],[<hbm:plate_steel>, <hbm:powder_advanced_alloy>, <hbm:mechanism_revolver_2>], [null, <hbm:plate_aluminium>, <ore:plankWood>]]);
 recipes.addShaped(<appliedenergistics2:crafting_accelerator>, [[null, <appliedenergistics2:part:16>, null],[<hbm:circuit_copper>, <appliedenergistics2:crafting_unit>, <hbm:circuit_copper>], [null, <appliedenergistics2:part:16>, null]]);
 recipes.addShaped(<modularmachinery:blockparallelcontroller>, [[null, <appliedenergistics2:crafting_accelerator>, null],[<appliedenergistics2:crafting_accelerator>, <modularmachinery:blockcasing>, <appliedenergistics2:crafting_accelerator>], [null, <appliedenergistics2:crafting_accelerator>, null]]);
@@ -151,7 +157,7 @@ recipes.addShaped(<projecte:relay_mk3>, [[null, <projecte:relay_mk2>, null],[<pr
 recipes.addShaped(<projecte:relay_mk2>, [[null, <projecte:relay_mk1>, null],[<projecte:relay_mk1>, <projecte:item.pe_klein_star:4>, <projecte:relay_mk1>], [null, <projecte:relay_mk1>, null]]);
 recipes.addShaped(<projecte:relay_mk1>, [[null, <projecte:collector_mk3>, null],[<projecte:collector_mk3>, <projecte:item.pe_klein_star:3>, <projecte:collector_mk3>], [null, <projecte:collector_mk3>, null]]);
 recipes.addShaped(<projecte:collector_mk3>, [[null, <projecte:collector_mk2>, null],[<projecte:collector_mk2>, <projecte:item.pe_klein_star:2>, <projecte:collector_mk2>], [null, <projecte:collector_mk2>, null]]);
-recipes.addShaped(<projecte:collector_mk2>, [[null, <projecte:collector_mk3>, null],[<projecte:collector_mk3>, <projecte:item.pe_klein_star:1>, <projecte:collector_mk3>], [null, <projecte:collector_mk3>, null]]);
+recipes.addShaped(<projecte:collector_mk2>, [[null, <projecte:collector_mk1>, null],[<projecte:collector_mk1>, <projecte:item.pe_klein_star:1>, <projecte:collector_mk1>], [null, <projecte:collector_mk3>, null]]);
 
 
 recipes.addShaped(<appliedenergistics2:material:44>, [[<hbm:circuit_copper>, <appliedenergistics2:material:1>, <hbm:ingot_meteorite_forged>],[null, null, null], [null, null, null]]);
