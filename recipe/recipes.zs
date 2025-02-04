@@ -144,6 +144,14 @@ recipes.addShaped(<projecte:item.pe_klein_star:3>, [[<projecte:item.pe_klein_sta
 recipes.addShaped(<projecte:item.pe_klein_star:5>, [[<projecte:item.pe_klein_star:4>, <projecte:matter_block:1>, <projecte:item.pe_klein_star:4>],[<projecte:matter_block:1>, <projecte:item.pe_klein_star:4>, <projecte:matter_block:1>], [<projecte:item.pe_klein_star:4>, <projecte:matter_block:1>, <projecte:item.pe_klein_star:4>]]);
 recipes.addShaped(<projecte:item.pe_klein_star:4>, [[<projecte:item.pe_klein_star:3>, <projecte:matter_block>, <projecte:item.pe_klein_star:3>],[<projecte:matter_block>, <projecte:item.pe_klein_star:3>, <projecte:matter_block>], [<projecte:item.pe_klein_star:3>, <projecte:matter_block>, <projecte:item.pe_klein_star:3>]]);
 recipes.addShaped(<projecte:item.pe_klein_star>, [[<projecte:item.pe_fuel:2>, <projecte:item.pe_alchemical_bag>, <projecte:item.pe_fuel:2>],[<projecte:item.pe_fuel:2>, <projecte:item.pe_philosophers_stone>, <projecte:item.pe_fuel:2>], [<projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>, <projecte:item.pe_fuel:2>]]);
+recipes.addShaped(<projecte:collector_mk1>, [[<projecte:fuel_block:2>, null , <projecte:fuel_block:2>],[null, <projecte:alchemical_chest>, null], [<projecte:fuel_block:2>, <projecte:item.pe_klein_star>, <projecte:fuel_block:2>]]);
+recipes.addShaped(<projecte:transmutation_table>, [[null, <minecraft:stone_slab>, null],[null, <projecte:item.pe_philosophers_stone>, null], [null, <minecraft:writable_book>, null]]);
+recipes.addShaped(<projecte:condenser_mk1>, [[null, <touhou_little_maid:smart_slab>, null],[<projecte:item.pe_klein_star>, <projecte:transmutation_table>, <projecte:item.pe_klein_star>], [null, <projecte:alchemical_chest>, null]]);
+recipes.addShaped(<projecte:relay_mk3>, [[null, <projecte:relay_mk2>, null],[<projecte:relay_mk2>, <projecte:item.pe_klein_star:5>, <projecte:relay_mk2>], [null, <projecte:relay_mk2>, null]]);
+recipes.addShaped(<projecte:relay_mk2>, [[null, <projecte:relay_mk1>, null],[<projecte:relay_mk1>, <projecte:item.pe_klein_star:4>, <projecte:relay_mk1>], [null, <projecte:relay_mk1>, null]]);
+recipes.addShaped(<projecte:relay_mk1>, [[null, <projecte:collector_mk3>, null],[<projecte:collector_mk3>, <projecte:item.pe_klein_star:3>, <projecte:collector_mk3>], [null, <projecte:collector_mk3>, null]]);
+recipes.addShaped(<projecte:collector_mk3>, [[null, <projecte:collector_mk2>, null],[<projecte:collector_mk2>, <projecte:item.pe_klein_star:2>, <projecte:collector_mk2>], [null, <projecte:collector_mk2>, null]]);
+recipes.addShaped(<projecte:collector_mk2>, [[null, <projecte:collector_mk3>, null],[<projecte:collector_mk3>, <projecte:item.pe_klein_star:1>, <projecte:collector_mk3>], [null, <projecte:collector_mk3>, null]]);
 
 
 recipes.addShaped(<appliedenergistics2:material:44>, [[<hbm:circuit_copper>, <appliedenergistics2:material:1>, <hbm:ingot_meteorite_forged>],[null, null, null], [null, null, null]]);
