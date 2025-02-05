@@ -13,3 +13,7 @@ var AlchemyStage = ZenStager.initStage("alchemy");
 var SteelStage = ZenStager.initStage("steel");
 
 var DiamondStage = ZenStager.initStage("diamond");
+
+// rbmk stage
+
+var RbmkStage = ZenStager.initStage("rbmk");

@@ -5,6 +5,7 @@ import mods.modularmachinery.IngredientArrayBuilder;
 
 
 val coin_10000 = <contenttweaker:emc_coin_10000>;
+val coin_100000 = <contenttweaker:emc_coin_100000>;
 
 val base_coin = 8;
 
@@ -233,3 +234,11 @@ RecipeBuilder.newBuilder("factory", "void_communicator", 600).addItemInputs([
     <hbm:red_cable>*64,
     <hbm:machine_industrial_generator>
 ]).addItemOutput(<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:factory"})).build();
+
+// ourput <hbm:book_guide_book:1>
+RecipeBuilder.newBuilder("book_guide_book_rbmk", "void_communicator", 600).addItemInputs([
+    <minecraft:book>*1,
+    <ore:ingotTcAlloy>*16,
+    <ore:ingotSchrabidium>*16,
+    coin_100000 * 64
+]);

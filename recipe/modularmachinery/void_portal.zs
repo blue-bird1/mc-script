@@ -62,9 +62,7 @@ builder5.build();
 
 val builder6 as RecipePrimer = RecipeBuilder.newBuilder("block_meteor", "void_portal", 1200);
 builder6.addItemInputs([
-    <ore:ingotSaturnite>*16,
-    <ore:ingotTungsten> * 16,
-    <ore:ingotDuraSteel>*6,
+    <ore:ingotStarmetal>*4,
     <contenttweaker:emc_coin_10000> * 16,
 ]);
 builder6.addItemOutput(<appliedenergistics2:sky_stone_block>* 16);

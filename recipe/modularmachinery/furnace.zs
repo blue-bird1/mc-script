@@ -65,10 +65,10 @@ RecipeBuilder.newBuilder("ingot_meteorite_forged", "furnace", 100).addItemInputs
     <ore:coalCoke>*1
 ]).addEnergyPerTickInput(base_energy * 8).addFluidInput(<liquid:oxygen> *1000).addFluidInput(<liquid:hydrogen> * 1000).addItemOutput(<hbm:ingot_meteorite_forged>* 1).build();
 
-RecipeBuilder.newBuilder("ingot_tcalloy", "furnace", 100).addItemInputs([
+RecipeBuilder.newBuilder("ingot_tcalloy", "furnace", 600).addItemInputs([
     <ore:ingotTc99>* 1,
     <ore:ingotSteel> *1
-]).addEnergyPerTickInput(base_energy * 20).addFluidInput(<liquid:oxygen> *1000).addFluidInput(<liquid:hydrogen> * 1000).addItemOutput(<hbm:ingot_tcalloy>* 1).build();
+]).addEnergyPerTickInput(base_energy * 40).addFluidInput(<liquid:oxygen> *1000).addFluidInput(<liquid:hydrogen> * 1000).addItemOutput(<hbm:ingot_tcalloy>* 1).build();
 
 
 // fluid output <liquid:knightmetal>, input <twilightforest:phantom_helmet>
@@ -79,5 +79,12 @@ RecipeBuilder.newBuilder("knightmetal", "furnace", 100).addItemInputs([
 RecipeBuilder.newBuilder("phantom_chestplate", "furnace", 100).addItemInputs([
     <twilightforest:phantom_chestplate>*1
 ]).addEnergyPerTickInput(base_energy).addFluidInput(<liquid:oxygen> *1000).addItemOutput(<twilightforest:knightmetal_ingot:*> * 2).build();
+
+
+// output <hbm:ingot_magnetized_tungsten>, input <ore:ingotSchrabidium>, <ore:ingotTungsten>
+RecipeBuilder.newBuilder("ingot_magnetized_tungsten", "furnace", 3600).addItemInputs([
+    <ore:ingotSchrabidium>*1,
+    <ore:ingotTungsten>*1
+]).addEnergyPerTickInput(base_energy * 200).addFluidInput(<liquid:oxygen> *1000).addItemOutput(<hbm:ingot_magnetized_tungsten>* 1).build();
 
 

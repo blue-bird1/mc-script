@@ -32,7 +32,8 @@ val delete_list = [
     <hbm:factory_titanium_core>,
     <hbm:factory_titanium_hull>,
     <hbm:gun_revolver_nightmare>,
-    <appliedenergistics2:crafting_accelerator>
+    <appliedenergistics2:crafting_accelerator>,
+    <hbm:book_guide_book:1>
 
 ] as IItemStack[];
 for item in delete_list {
@@ -52,7 +53,7 @@ recipes.removeShapeless(<hbm:biomass> * 6, [<ore:logWood>, <ore:logWood>, <ore:l
 recipes.removeShapeless(<hbm:biomass> * 4, [<ore:treeLeaves>, <ore:treeLeaves>, <ore:treeLeaves>, <ore:treeLeaves>, <ore:treeLeaves>]);
 
 
-
+recipes.addShaped(<hbm:rbmk_outgasser>, [[<hbm:steel_grate>, <minecraft:hopper>, <hbm:steel_grate>],[<hbm:steel_grate>, <hbm:rbmk_blank>, <hbm:steel_grate>], [<hbm:steel_grate>, <ore:ingotAnyResistantAlloy>, <hbm:steel_grate>]]);
 recipes.addShaped(<hbm:gun_revolver_nightmare>, [[null, null, null],[<hbm:plate_steel>, <hbm:powder_advanced_alloy>, <hbm:mechanism_revolver_2>], [null, <hbm:plate_aluminium>, <ore:plankWood>]]);
 recipes.addShaped(<appliedenergistics2:crafting_accelerator>, [[null, <appliedenergistics2:part:16>, null],[<hbm:circuit_copper>, <appliedenergistics2:crafting_unit>, <hbm:circuit_copper>], [null, <appliedenergistics2:part:16>, null]]);
 recipes.addShaped(<modularmachinery:blockparallelcontroller>, [[null, <appliedenergistics2:crafting_accelerator>, null],[<appliedenergistics2:crafting_accelerator>, <modularmachinery:blockcasing>, <appliedenergistics2:crafting_accelerator>], [null, <appliedenergistics2:crafting_accelerator>, null]]);
