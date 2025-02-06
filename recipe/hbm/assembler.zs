@@ -89,9 +89,9 @@ Assembler.addRecipe(<modularmachinery:factory_controller>, [basic_cricult_3*4, <
 // Assembler.replaceRecipe(<hbm:reactor_computer>,[<hbm:reactor_conductor>*2,<hbm:circuit_targeting_tier3>*4], mid_assembler_time);
 
 Assembler.replaceRecipe(<hbm:machine_gascent>, [<hbm:coil_tungsten>*4, <ore:plateSaturnite>*8, basic_cricult_3, <hbm:centrifuge_element>*4,<ore:ingotStarmetal>*2, <ore:ingotAnyPlastic> * 8 ], 300);
-Assembler.replaceRecipe(<hbm:circuit_copper>, [basic_cricult, <appliedenergistics2:material:22>,<appliedenergistics2:material:23>,<appliedenergistics2:material:24>, <ore:plateAdvancedAlloy>*2, <hbm:wire_red_copper>*4], 200);
+Assembler.replaceRecipe(<hbm:circuit_copper>, [<appliedenergistics2:material:22>,<appliedenergistics2:material:23>,<appliedenergistics2:material:24>, <ore:plateAdvancedAlloy>*2, <hbm:wire_red_copper>*4], 200);
 // <hbm:circuit_aluminium>  by recipes.addShaped(<hbm:circuit_aluminium> , [[null, <hbm:wire_aluminium>, null],[<appliedenergistics2:material:16>, <appliedenergistics2:material:17>, <appliedenergistics2:material:18>], [null, <hbm:plate_copper>, null]]);
-Assembler.replaceRecipe(<hbm:circuit_aluminium>, [<hbm:wire_aluminium>, <appliedenergistics2:material:16>, <appliedenergistics2:material:17>, <appliedenergistics2:material:18>], 100);
+Assembler.replaceRecipe(<hbm:circuit_aluminium>, [<hbm:wire_aluminium>, <appliedenergistics2:material:23>,<ore:plateAdvancedAlloy> ], 100);
 
 Assembler.replaceRecipe(<hbm:machine_chemplant>, [<ore:ingotSteel>*8, <ore:plateCopper>*6,<hbm:hull_small_steel>*2,<hbm:tank_steel>*4,<hbm:hull_big_steel>,
 <hbm:wire_red_copper>*16,<hbm:wire_tungsten>*3,<hbm:circuit_copper>*4,<hbm:plate_polymer>*8],600);
